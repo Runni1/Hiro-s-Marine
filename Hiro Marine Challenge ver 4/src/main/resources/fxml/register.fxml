@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.RegisterController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Daftar Akun Baru" style="-fx-font-size: 24px; -fx-text-fill: #007bff;" />
+    <TextField fx:id="newUsernameField" promptText="Nama Pengguna Baru" prefWidth="250"/>
+    <PasswordField fx:id="newPasswordField" promptText="Sandi Baru" prefWidth="250"/>
+    <Button text="Daftar" onAction="#handleRegister" style="-fx-background-color: #007bff; -fx-text-fill: white;" />
+    <Button text="Sudah punya akun? Masuk di sini" onAction="#goToLogin" style="-fx-text-fill: #007bff;" />
+</VBox>
