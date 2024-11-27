@@ -1,29 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+package models;
 
-/**
- *
- * @author Asus
- */
+import java.util.List;
+
 public class Recommendation {
-    public class Lokasi {
-    private String nama;
+    private int id;
+    private String namaLokasi;
     private String deskripsi;
-    private String gambar; // URL atau path ke gambar
-    private double rating;
+    private String gambar;
+    private List<Comment> komentar;
 
-    public Lokasi(String nama, String deskripsi, String gambar) {
-        this.nama = nama;
+    public Recommendation(int id, String namaLokasi, String deskripsi, String gambar, List<Comment> comments) {
+        this.id = id;
+        this.namaLokasi = namaLokasi;
         this.deskripsi = deskripsi;
         this.gambar = gambar;
-        this.rating = 0.0;
+        this.komentar = komentar;
     }
 
-    // Getter dan Setter
-    public String getNama() {
-        return nama;
+    // Getters
+    public String getNamaLokasi() {
+        return namaLokasi;
     }
 
     public String getDeskripsi() {
@@ -34,43 +30,7 @@ public class Recommendation {
         return gambar;
     }
 
-    public double getRating() {
-        return rating;
+    public List<Comment> getKomentar(){
+        return komentar;
     }
-
-    public void setRating(double rating) {
-        this.rating = rating;
-    }
-}
-    public class Komentar {
-    private String user;
-    private String isi;
-    private String gambar; // Optional, untuk gambar yang di-upload
-    private Lokasi lokasi;
-
-    public Komentar(String user, String isi, String gambar, Lokasi lokasi) {
-        this.user = user;
-        this.isi = isi;
-        this.gambar = gambar;
-        this.lokasi = lokasi;
-    }
-
-    // Getter dan Setter
-    public String getUser () {
-        return user;
-    }
-
-    public String getIsi() {
-        return isi;
-    }
-
-    public String getGambar() {
-        return gambar;
-    }
-
-    public Lokasi getLokasi() {
-        return lokasi;
-    }
-}
-    
 }
