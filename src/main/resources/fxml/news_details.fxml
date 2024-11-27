@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="723.0" prefWidth="391.0" spacing="10" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewsDetailsController">
+    <Label fx:id="titleLabel" prefHeight="60.0" prefWidth="366.0" style="-fx-font-size: 18px;" />
+    <ImageView fx:id="newsImageView" fitHeight="116.0" fitWidth="159.0" />
+    <Label fx:id="descriptionLabel" prefHeight="444.0" prefWidth="366.0" textAlignment="JUSTIFY" wrapText="true" />
+    <Label fx:id="adminLabel" prefHeight="40.0" prefWidth="64.0" />
+</VBox>

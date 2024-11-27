@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChallengeDetailsController">
+
+    <ImageView fx:id="challengeImage" fitHeight="144.0" fitWidth="350" preserveRatio="true" smooth="false" />
+   <Label text="POSTER GAMBAR CHALLENGE" />
+    <Label fx:id="challengeTitle" style="-fx-font-size: 20px;" text="MANGROVE MASTER" />
+    <Text fx:id="challengeDescription" text="Bergabunglah dalam Tantangan Mangrove Master dan jadilah bagian dari gerakan hijau untuk menyelamatkan pantai kita! Kami mengajak Anda untuk bersama-sama menanam pohon mangrove di daerah pantai yang indah. Mangrove tidak hanya membantu melindungi garis pantai dari erosi, tetapi juga menyediakan habitat penting bagi berbagai spesies laut dan meningkatkan kualitas udara. Detail Tantangan: Lokasi: Pantai [Nama Pantai] Tanggal: [Tanggal Acara] Waktu: [Waktu Acara] Kegiatan: Penanaman pohon mangrove, edukasi tentang pentingnya mangrove, dan sesi tanya jawab dengan ahli lingkungan." textAlignment="CENTER" wrappingWidth="245.19995653629303" />
+    <Label fx:id="challengePoints" style="-fx-font-size: 16px;" text="Poin yang dapat diraih 1-10" />
+   <Label text="QR CODE" />
+    <ImageView fx:id="qrCodeImage" fitHeight="150" fitWidth="150" />
+    <Button fx:id="closeButton" onAction="#closeChallengeDetails" text="Close" />
+</VBox>

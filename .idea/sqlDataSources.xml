@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="32948313-e9e5-48d4-aff5-0561bba11c67" name="Hiro's Marine Mapping">
+      <data-sources db="a3a84e30-b63a-46a4-a59f-d687df3bbe8a" ddl="cf293e11-433a-4ecf-bc6f-02ac7d9b2cfe" />
+      <scope>
+        <node negative="1">
+          <node kind="database" qname="@" />
+          <node kind="schema">
+            <name qname="hiro_marine" />
+            <name qname="hiromarine" />
+            <name qname="hiros_marine" />
+          </node>
+        </node>
+      </scope>
+    </mapping>
+    <mapping uuid="c257ee2c-1f2c-4632-8fbf-d1504721d342" name="Hiros Marine Mapping">
+      <data-sources db="817c5b9c-cd22-4094-9a71-cd59caa1c085" />
+      <scope>
+        <node kind="schema" qname="hiros_marine" />
+      </scope>
+    </mapping>
+  </component>
+</project>
