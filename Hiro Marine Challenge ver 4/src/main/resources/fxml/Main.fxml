@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+    <top>
+        <VBox spacing="10" />
+    </top>
+    <center>
+        <AnchorPane fx:id="contentPane">
+            <Pane prefHeight="602.0" prefWidth="836.0">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0781b1" height="631.0" layoutX="-19.0" layoutY="-12.0" stroke="BLACK" strokeType="INSIDE" width="873.0" />
+                    <TabPane layoutX="7.0" layoutY="87.0" prefHeight="512.0" prefWidth="826.0" tabClosingPolicy="UNAVAILABLE">
+                        <tabs>
+                            <Tab text="NEWS">
+                                <content>
+                                    <AnchorPane prefHeight="239.0" prefWidth="582.0">
+                                        <children>
+                                            <StackPane fx:id="newsBox1" prefHeight="139.0" prefWidth="635.0">
+                                                <children>
+                                                    <Rectangle fx:id="newsRect1" arcHeight="5.0" arcWidth="5.0" fill="#a5d6dc7a" height="140.0" stroke="BLACK" strokeType="INSIDE" width="635.0" />
+                                                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="606.0" text="Waktu Hampir Habis untuk Selamatkan Hiu" textAlignment="CENTER">
+                                                        <font>
+                                                            <Font name="Maiandra GD" size="18.0" />
+                                                        </font>
+                                                    </Label>
+                                                </children>
+                                            </StackPane>
+                                            <StackPane fx:id="newsBox2" layoutX="191.0" layoutY="146.0" prefHeight="74.0" prefWidth="561.0">
+                                                <Rectangle fx:id="newsRect2" arcHeight="5.0" arcWidth="5.0" fill="#c3eac3" height="150.0" stroke="BLACK" strokeType="INSIDE" width="635.0" />
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="635.0" text="Pemutihan Terumbu Karang Akibat Panas Laut" textAlignment="CENTER">
+                                                    <font>
+                                                        <Font name="Maiandra GD" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </StackPane>
+                                            <StackPane fx:id="newsBox3" layoutY="303.0" prefHeight="151.0" prefWidth="625.0">
+                                                <children>
+                                                    <Rectangle fx:id="newsRect3" arcHeight="5.0" arcWidth="5.0" fill="#f7e1ae" height="150.0" stroke="BLACK" strokeType="INSIDE" width="635.0" />
+                                                    <Label alignment="TOP_LEFT" prefHeight="23.0" prefWidth="558.0" text="Penembak Singa Laut Diburu, yang Menemukan Dihadiahi Rp312 Juta">
+                                                        <font>
+                                                            <Font name="Maiandra GD" size="18.0" />
+                                                        </font>
+                                                    </Label>
+                                                </children>
+                                            </StackPane>
+                                        </children>
+                                    </AnchorPane>
+                                </content>
+                            </Tab>
+                            <Tab text="MARINE SPECIES">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                              <children>
+                                    <Button layoutX="70.0" layoutY="153.0" onAction="#showMarineSpecies" text="Show Marine Species" />
+                                 <Button layoutX="251.0" layoutY="153.0" onAction="#showMarineSpecies" text="Show Marine Species" />
+                                 <Button layoutX="431.0" layoutY="153.0" onAction="#showMarineSpecies" text="Show Marine Species" />
+                                 <Button layoutX="610.0" layoutY="153.0" onAction="#showMarineSpecies" text="Show Marine Species" />
+                              </children></AnchorPane>
+                                </content>
+                            </Tab>
+
+                            <Tab text="RECOMMENDATION">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                        <children>
+                                            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="323.0" layoutX="313.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                                            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffed" height="309.0" layoutX="53.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                                            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="332.0" layoutX="581.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                                            <ImageView fitHeight="73.0" fitWidth="93.0" layoutX="106.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+                                            </ImageView>
+                                            <ImageView fitHeight="85.0" fitWidth="122.0" layoutX="352.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+                                            </ImageView>
+                                            <ImageView fitHeight="103.0" fitWidth="147.0" layoutX="608.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                                            </ImageView>
+                                            <Label layoutX="128.0" layoutY="106.0" prefHeight="18.0" prefWidth="49.0" text="LOKASI" />
+                                            <Label layoutX="388.0" layoutY="106.0" prefHeight="18.0" prefWidth="49.0" text="LOKASI" />
+                                            <Label layoutX="656.0" layoutY="106.0" prefHeight="18.0" prefWidth="49.0" text="LOKASI" />
+                                            <Button layoutX="82.0" layoutY="344.0" mnemonicParsing="false" text="Diskusi Rekomendasi" />
+                                            <Button layoutX="342.0" layoutY="344.0" mnemonicParsing="false" text="Diskusi Rekomendasi" />
+                                            <Button layoutX="618.0" layoutY="344.0" mnemonicParsing="false" text="Diskusi Rekomendasi" />
+                                 <TextArea layoutX="66.0" layoutY="228.0" prefHeight="102.0" prefWidth="174.0" text="Tempat ini sangat luar&#10;biasa" />
+                                 <TextArea layoutX="326.0" layoutY="228.0" prefHeight="102.0" prefWidth="174.0" text="Tempat ini sangat luar&#10;biasa" />
+                                 <TextArea layoutX="601.0" layoutY="228.0" prefHeight="102.0" prefWidth="174.0" text="Tempat ini sangat luar&#10;biasa" />
+                                        </children></AnchorPane>
+                                </content>
+                            </Tab>
+                            <Tab text="CHALLENGE">
+                                <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="460.0" prefWidth="811.0">
+                                        <children>
+                                            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7db0dc" height="272.0" layoutX="85.0" layoutY="113.0" stroke="BLACK" strokeType="INSIDE" width="689.0" />
+                                            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#698dbc" height="82.0" layoutX="85.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="687.0" />
+                                            <Label layoutX="119.0" layoutY="36.0" prefHeight="36.0" prefWidth="165.0" style="-fx-font-size: 18px;" text="TOP LEADERBOARD" />
+                                            <Button fx:id="firstPlaceButton" layoutX="305.0" layoutY="36.0" mnemonicParsing="false" onAction="#showUserDetails" prefHeight="36.0" prefWidth="151.0" text="1. ABDUL" />
+                                            <Button fx:id="secondPlaceButton" layoutX="456.0" layoutY="36.0" mnemonicParsing="false" onAction="#showUserDetails" prefHeight="36.0" prefWidth="146.0" text="2. ABDAL" />
+                                            <Button fx:id="thirdPlaceButton" layoutX="602.0" layoutY="36.0" mnemonicParsing="false" onAction="#showUserDetails" prefHeight="36.0" prefWidth="152.0" text="3. ABDEL" />
+                                            <Button layoutX="102.0" layoutY="169.0" onAction="#displayChallengeDetails" prefHeight="60.0" prefWidth="308.0" text=" Details">
+                                                <graphic>
+                                                    <Pane prefHeight="39.0" prefWidth="178.0">
+                                                        <children>
+                                                            <Label layoutY="12.0" prefHeight="16.0" prefWidth="149.0" text="BEAUTY OF THE BEACH" />
+                                                        </children>
+                                                    </Pane>
+                                                </graphic>
+                                            </Button>
+                                            <Button layoutX="459.0" layoutY="169.0" onAction="#displayChallengeDetails" prefHeight="60.0" prefWidth="296.0" text=" Details">
+                                                <graphic>
+                                                    <Pane prefHeight="39.0" prefWidth="178.0">
+                                                        <children>
+                                                            <Label layoutY="12.0" prefHeight="16.0" prefWidth="149.0" text="LORD OF SHELL" />
+                                                        </children>
+                                                    </Pane>
+                                                </graphic>
+                                            </Button>
+                                            <Button layoutX="101.0" layoutY="280.0" onAction="#displayChallengeDetails" prefHeight="60.0" prefWidth="309.0" text=" Details">
+                                                <graphic>
+                                                    <Pane prefHeight="39.0" prefWidth="178.0">
+                                                        <children>
+                                                            <Label layoutY="12.0" prefHeight="16.0" prefWidth="149.0" text="MANGROVE MASTER" />
+                                                        </children>
+                                                    </Pane>
+                                                </graphic>
+                                            </Button>
+                                            <Button layoutX="460.0" layoutY="280.0" onAction="#displayChallengeDetails" prefHeight="60.0" prefWidth="294.0" text=" Details">
+                                                <graphic>
+                                                    <Pane prefHeight="39.0" prefWidth="178.0">
+                                                        <children>
+                                                            <Label layoutY="12.0" prefHeight="16.0" prefWidth="149.0" text="KRIYA BEACH CREATION" />
+                                                        </children>
+                                                    </Pane>
+                                                </graphic>
+                                            </Button>
+                                            <Button layoutX="370.0" layoutY="402.0" onAction="#openAdminPanel" text="Open Admin Panel" />
+                                            <Label layoutX="353.0" layoutY="121.0" prefHeight="36.0" prefWidth="158.0" style="-fx-font-size: 18px;" text="NEW CHALLENGE " />
+                                        </children>
+                                    </AnchorPane>
+                                </content>
+                            </Tab>
+                        </tabs>
+                    </TabPane>
+                    <Label layoutX="244.0" text="HIRO'S MARINE" textFill="WHITE">
+                        <font>
+                            <Font name="Leelawadee UI" size="50.0" />
+                        </font>
+                    </Label>
+                    <Button fx:id="profileButton" layoutX="767.0" layoutY="14.0" onAction="#showUserProfile" prefHeight="45.0" prefWidth="41.0" text="U" />
+                    <Label fx:id="usernameLabel" layoutX="758.0" layoutY="65.0" text="User Name" />
+                </children>
+            </Pane>
+        </AnchorPane>
+    </center>
+</BorderPane>
